@@ -1,0 +1,28 @@
+/*
+* Reverse an array.
+* Input: [1, 2, 3, 4, 5]
+* Output: [5, 4, 3, 2, 1]
+*/
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    
+    int array[] = {1,2,3,4,5};
+    
+    int reverse[5];
+    
+    int len = sizeof(array)/sizeof(array[0]);
+    
+    for(int i=0;i<len;i++)
+    {
+        reverse[i] = array[len - i - 1];
+    }
+
+    for(int i=0;i<len;i++)
+    {
+        printf("%d",reverse[i]);
+    }
+    
+    return 0;
+}
