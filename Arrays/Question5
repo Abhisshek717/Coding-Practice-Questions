@@ -1,0 +1,26 @@
+/*
+Find the minimum element in an array.
+Input: [3, 1, 4, 1, 5, 9]
+Output: 1
+*/
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int arr[] = {3,1,4,1,5,9};
+    
+    int len = sizeof(arr)/sizeof(arr[0]);
+    
+    int min = arr[0];
+    for(int i=0;i<len;i++)
+    {
+        if(arr[i] < min)
+        {
+            min = arr[i];
+        }
+    }
+    
+    printf("min: %d",min);
+
+    return 0;
+}
